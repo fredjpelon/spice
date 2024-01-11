@@ -1,0 +1,13 @@
+* Simple attenuator circuit
+
+* Netlist, op, print v(a) v(b) i(v1)
+V1 a 0 60V
+R1 a b 20
+R2 b 0 10
+
+* control commands
+.control
+op
+* print v(a) v(b) v(a,b) i(v1)
+print all
+.endc
